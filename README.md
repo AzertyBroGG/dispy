@@ -1,3 +1,5 @@
+### Work in progress, This library is not done yet.
+
 # dispy
 A simple (and experimental) API wrapper around Discord API.
 
@@ -14,12 +16,10 @@ import dispy
 
 client = dispy.Client()
 
-@client.on('message_create')
-def message_create(message: dispy.DiscordMessage):
-  if message.author.is_me():
-    return
-  
-  message.channel.create_message(f"{message.author.name} said, {message.content}")
+@client.event_listener
+def message_create(message):
+  print(message['author']['username'], 'said,')
+  print(message['content']
 
 client.login('your-bot-token')
 ```
