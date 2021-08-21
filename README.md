@@ -19,7 +19,7 @@ client = dispy.Client()
 @client.event_listener
 def message_create(message):
   print(message['author']['username'], 'said,')
-  print(message['content']
+  print(message['content'])
 
 client.login('your-bot-token')
 ```
