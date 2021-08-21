@@ -44,6 +44,7 @@ class Client:
         listeners = self.event_listeners.get(event['t'])
         if listeners:
             for listener in listeners:
+                print(event['d'])
                 return listener(event['d'])
 
 
@@ -113,8 +114,9 @@ class Client:
         self._send_request(payload)
         while True:
             event = self._recieve_response()
+            print(event['t'])
             try:
                 if event['t'] in GATEWAY_EVENTS:
-                    self.dispatch_event(event)
+                    self.dispatch_event(event['t'], )
             except:
                 ...
