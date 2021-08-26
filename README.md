@@ -1,4 +1,6 @@
-### Work in progress, This library is not done yet.
+## Work in progress
+
+This library is not done yet. Only a small part is inplemented and is unstable.
 
 # dispy
 A simple (and experimental) API wrapper around Discord API.
@@ -6,7 +8,7 @@ A simple (and experimental) API wrapper around Discord API.
 ## Precaution
 This library is ultimately an experimental library. This is not meant to be used in production enivornment at all. We don't provide any assurance of how stable this library is. If you are looking for something to use in production enivornment, Please use [discord.py](https://github.com/Rapptz/discord.py)
 
-## Roadmap
+## Roadmap (No specific order)
 - [ ] Object Oriented design
 - [ ] Rate limit handling
 - [ ] Implement basic endpoints and gateway events
